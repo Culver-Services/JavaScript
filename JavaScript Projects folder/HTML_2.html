@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/JavaScript_2.js"></script>
+    <link rel="stylesheet" href="CSS_1.css">
+    
+</head>
+
+<body>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">   <!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".--->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">    <!--The input type="checkbox" defines a checkbox:-->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    
+</body>
+
+</html>
