@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>(NBA)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/one_page_website.css">
+		<script src="JS/one_page_website.js"></script>
+	</head>
+	<body>
+			<!-- NAV -->
+			<div>
+				<div>
+					<ul>
+						<a href="#home" id="link"><li>HOME</li></a>
+						<a href="#gallery"><li>GALLERY</li></a>
+						<a href="#videos"><li>VIDEOS</li></a>
+					</ul>
+				</div>
+			</div>
+			<!-- END NAV -->
+			
+			<!-- HOME -->
+			<div id="home">
+				<div>
+					<div>
+						<span>The National Basketball Association</span>
+					</div>
+				</div>
+			</div>
+			<!-- END HOME -->
+	
+			<!-- GALLERY -->
+			
+			<section>
+				<div id="gallery">
+					<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="images/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="images/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="images/img1_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="images/img2_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="images/img3_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="images/img4_wide.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="images/img1.jpg" onclick="currentSlide(1)" alt="Giannis Antetokounmpo">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="LeBron James">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="Stephen Curry">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="images/img4.jpg" onclick="currentSlide(4)" alt="Chris Paul">
+	  </div>
+	</div>
+  </div>
+				</div>
+			</section>
+		<!-- END GALLERY -->
+		
+			<!-- RSVP -->
+		<section>
+		<div id="videos">
+			<div>
+				<div>
+					<h1>New Inductee To The Hall Of Fame <em>Kevin Garnett</em></h1>
+					<div>
+					<iframe width="832" height="468" src="https://www.youtube.com/embed/biSt2aNoufk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<h2><span>Your adventure is a click away from full control.</span>
+							<br /><em>Watch your live HD pause and play content whenever you wish!</em>
+						</h2>
+						<p>
+							Please provide us with your basic information for a chance to win a free subscription.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP -->
+
+
+
+	</body>
+		<footer>
+			<p>Author: Chadwick Culver</p>
+			<p><a href="https://ca.nba.com/?gr=www">www.NBA.com </a></p>
+		</footer>
+</html>
