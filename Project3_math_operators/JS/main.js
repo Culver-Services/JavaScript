@@ -1,15 +1,25 @@
-function myFunction() {         //One click function.
-  var y = 5;
-  x = y + 2;
+function myFunction() {
+  var x = document.getElementById("demo")
+  x.innerHTML = Math.floor((Math.random() * 100) + 1);
+}
 
-  document.getElementById("switch").innerHTML = x ++;
-  document.getElementById("switch2").innerHTML = x + 3;
-  document.getElementById("switch3").innerHTML = x * y;
-  document.getElementById("switch4").innerHTML = x % 5;
-  document.getElementById("switch5").innerHTML = x + y;
-  document.getElementById("switch6").innerHTML = x --;
+function myFunction2() {
+  var x = document.getElementById("demo")
+  x.innerHTML = Math.floor((Math.random() % 100) - 1);
+}
 
-  window.alert(Math.random() * 100) + 1;
 
-  }
+function myFunction3(){
+let x = 5;
+x++;
+let z = x;
+document.getElementById("demo").innerHTML = z;
+}
 
+
+function myFunction4(){
+let x = 5;
+--x;
+let z = x;
+document.getElementById("demo").innerHTML = z;
+}
