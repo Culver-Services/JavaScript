@@ -1,10 +1,5 @@
-function get_Date() {                                                               //Time function
-    if (new Date().getHours() < 18) {
-        document.getElementById("Greeting").innerHTML = "How are you today?";
-    }
-}
 
-var x = 10;
+var x = 10;   //---The variable X was assigned the value 10 outside of our function, but we still accessed it – therefore, the above is an example of a global variable.
 function Add_numbers_1() {
     document.write(20 + x + "<br>");                                                //Local & Global varibles
 }
@@ -14,7 +9,7 @@ function Add_numbers_2() {
 Add_numbers_1();
 Add_numbers_2();
 
-function Add_numbers_3() {
+function Add_numbers_3() {      //---the code would only return “30” because the variable was local – meaning it was written within the function Add_numbers_3 and couldn’t be accessed outside of it.
     var y = 10;
     document.write(20 + y + "<br>");
 }
@@ -24,3 +19,9 @@ function Add_numbers_4() {
 }
 Add_numbers_3 ();
 Add_numbers_4 ();
+
+function get_Date() {                                                               //Time function
+    if (new Date().getHours() < 18) {
+        document.getElementById("Greeting").innerHTML = "How are you today?";
+    }
+}
